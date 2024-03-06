@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/global.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>FORTNITE</title>
+</head>
+<body>
+
+    <!-- Fundo do site -->
+    <div id="background">
+        <video loop autoplay muted>
+            <source src="/img_complementos/background_video.mp4" type="video/mp4">
+        </video>
+
+        <video loop autoplay muted class="video_primario">
+            <source src="/img/videoplayback.mp4" type="video/mp4">
+        </video>
+        
+        <video loop autoplay muted class="video_secundario">
+            <source src="/img_experiencia/trailer_festival.mp4" type="video/mp4">
+        </video>
+
+        <video loop autoplay muted class="video_terceario">
+            <source src="/img_experiencia/trailer_lego.mp4" type="video/mp4">
+        </video>
+
+        <video loop autoplay muted class="video_quarto">
+            <source src="/img_experiencia/trailer_rocket.mp4" type="video/mp4">
+        </video>
+        
+        
+    </div>
+    <!-- Topo do site-->
+
+    <div class="app">
+        <header>
+           <a href="https://store.epicgames.com/pt-BR/p/fortnite" target="_blank"><img src="/img/logo_fortnite.png" class="floating"></a> 
+
+            <ul class="navigation">
+                <li><a href="index.html" class="navigation_link">Visão Geral</a></li>
+                <li><a href="pacotes.html" class="navigation_link">Pacotes</a></li>
+                <li><a href="experiencia.html" class="navigation_link">Experiência</a></li>
+            </ul>
+        </header>
+
+        <main>
+        <div class="container_experiencia">
+            <h2>Experiências</h2>
+
+            <div class="experiencia_imagem imagem1">
+              <a href="https://store.epicgames.com/pt-BR/p/fortnite--battle-royale" target="_blank"><img src="/img_experiencia/battle.jpg" height="500"></a>  
+            </div>
+
+            <div class="experiencia_imagem imagem2">
+                <a href="https://store.epicgames.com/pt-BR/p/fortnite--festival" target="_blank"><img src="/img_experiencia/Festival.avif" height="500" width="280"></a>  
+            </div>
+
+            <div class="experiencia_imagem imagem3">
+                <a href="https://store.epicgames.com/pt-BR/p/fortnite--lego" target="_blank"><img src="/img_experiencia/lego.jpg" height="500"></a>  
+            </div>
+
+            <div class="experiencia_imagem imagem4">
+                <a href="https://store.epicgames.com/pt-BR/p/fortnite--rocket-racing" target="_blank"><img src="/img_experiencia/rocket.jpg" height="500"></a>  
+            </div>
+        </div>
+            
+        </main>
+        
+    </div>
+</body>
+
+<script>
+  document.querySelector('.imagem1').addEventListener('mouseenter', function() {
+  document.querySelector('#background video').style.display = 'none';
+  document.querySelector('#background video.video_primario').style.display = 'block';
+});
+
+document.querySelector('.imagem1').addEventListener('mouseleave', function() {
+  document.querySelector('#background video').style.display = 'block';
+  document.querySelector('#background video.video_primario').style.display = 'none';
+});
+
+document.querySelector('.imagem2').addEventListener('mouseenter', function() {
+  document.querySelector('#background video').style.display = 'none';
+  document.querySelector('#background video.video_secundario').style.display = 'block';
+});
+
+document.querySelector('.imagem2').addEventListener('mouseleave', function() {
+  document.querySelector('#background video').style.display = 'block';
+  document.querySelector('#background video.video_secundario').style.display = 'none';
+});
+
+document.querySelector('.imagem3').addEventListener('mouseenter', function() {
+  document.querySelector('#background video').style.display = 'none';
+  document.querySelector('#background video.video_terceario').style.display = 'block';
+});
+
+document.querySelector('.imagem3').addEventListener('mouseleave', function() {
+  document.querySelector('#background video').style.display = 'block';
+  document.querySelector('#background video.video_terceario').style.display = 'none';
+});
+
+document.querySelector('.imagem4').addEventListener('mouseenter', function() {
+  document.querySelector('#background video').style.display = 'none';
+  document.querySelector('#background video.video_quarto').style.display = 'block';
+});
+
+document.querySelector('.imagem4').addEventListener('mouseleave', function() {
+  document.querySelector('#background video').style.display = 'block';
+  document.querySelector('#background video.video_quarto').style.display = 'none';
+});
+
+
+
+
+// Adicione eventos para as outras imagens conforme necessário
+
+</script>
+
+</html>
